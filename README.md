@@ -2,8 +2,8 @@
 A set of vulnerable environments for tool and penetration testing deployed with docker on Linux. 
 
 # Requirements 
-All those tools run on docker, please install docker !
-[Install Docker](https://docs.docker.com/engine/install/)
+All those tools run on docker, please install docker !  
+[Install Docker](https://docs.docker.com/engine/install/)  
 Make sure nothing is running on used ports : 
 - 20
 - 21
@@ -110,39 +110,39 @@ sh vulnenv.sh
 
 # Summary of used ports
 
-20/tcp   open  ftp-data
-21/tcp   open  ftp
-22/tcp   open  ssh
-23/tcp   open  telnet
-25/tcp   open  smtp
-80/tcp   open  mutillidae web
-81/tcp   open  mutillidae database managment
-82/tcp   open  mutillidae ldap managment
-83/tcp   open  Metasploitable web page 
-84/tcp   open  DVWA
-85/tcp   open  Bewapp
-111/tcp  open  rpcbind
-139/tcp  open  netbios-ssn
-389/tcp  open  mutillidae ldap
-443/tcp  open  mutillidae https web page
-445/tcp  open  microsoft-ds
-512/tcp  open  exec
-513/tcp  open  login
-514/tcp  open  shell
-1099/tcp open  rmiregistry
-1524/tcp open  ingreslock
-2121/tcp open  ccproxy-ftp
-3000/tcp open  ppp
-5432/tcp open  postgresql
-5900/tcp open  vnc server
-6000/tcp open  X11
-6667/tcp open  irc
-8009/tcp open  ajp13
-8080/tcp open  WebGoat web page 
-8086/tcp open  d-s-n
-8088/tcp open  radan-http
-8180/tcp open  apache tomcat
-8888/tcp open  mutillidae web page 
-9090/tcp open  WebGoat admin
-38195/tcp open  unknown
-39006/tcp open  unknown
+20/tcp   open  ftp-data  
+21/tcp   open  ftp  
+22/tcp   open  ssh  
+23/tcp   open  telnet  
+25/tcp   open  smtp  
+80/tcp   open  mutillidae web  
+81/tcp   open  mutillidae database managment  
+82/tcp   open  mutillidae ldap managment  
+83/tcp   open  Metasploitable web page   
+84/tcp   open  DVWA  
+85/tcp   open  Bewapp  
+111/tcp  open  rpcbind  
+139/tcp  open  netbios-ssn  
+389/tcp  open  mutillidae ldap  
+443/tcp  open  mutillidae https web page  
+445/tcp  open  microsoft-ds  
+512/tcp  open  exec  
+513/tcp  open  login  
+514/tcp  open  shell  
+1099/tcp open  rmiregistry  
+1524/tcp open  ingreslock  
+2121/tcp open  ccproxy-ftp  
+3000/tcp open  ppp  
+5432/tcp open  postgresql  
+5900/tcp open  vnc server  
+6000/tcp open  X11  
+6667/tcp open  irc  
+8009/tcp open  ajp13  
+8080/tcp open  WebGoat web page   
+8086/tcp open  d-s-n  
+8088/tcp open  radan-http  
+8180/tcp open  apache tomcat  
+8888/tcp open  mutillidae web page   
+9090/tcp open  WebGoat admin  
+38195/tcp open  unknown  
+39006/tcp open  unknown  
