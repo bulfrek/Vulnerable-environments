@@ -3,11 +3,12 @@ A set of vulnerable environments for tool and penetration testing deployed with 
 
 # Requirements 
 All those tools run on docker, please install docker !  
+
 [Install Docker](https://docs.docker.com/engine/install/)  
+
 Make sure nothing is running on used ports : 
 - 20
 - 21
-- 22
 - 23
 - 25
 - 80
@@ -75,7 +76,7 @@ Bewapp is another vulnerable web application.
 sudo docker run -it -d -p 127.0.0.1:85:80 hackersploit/bwapp-docker
 ```
 
-You then need to visit the page localhost:85/install.php and finalize the installation. 
+You then need to visit the page [localhost:85/install.php](localhost:85/install.php) and finalize the installation. 
 
 # WebGoat 
 
@@ -85,7 +86,7 @@ Yet another vulnerable web app
 sudo docker run -it -d -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat
 ```
 
-You then need to visit localhost:8080/WebGoat and create an account. 
+You then need to visit [localhost:8080/WebGoat](localhost:8080/WebGoat) and create an account. 
 
 # Mutillidae 
 
@@ -99,7 +100,7 @@ cd mutillidae-docker
 sudo docker compose up -d
 ```
 
-You have to visit any of the web pages next : localhost:80 (or 443 or 8888) and rebuild the database (one of the first blue links)
+You have to visit any of the web pages next : [localhost:80](localhost:80) (or 443 or 8888) and rebuild the database (one of the first blue links)
 
 # Deploy everything 
 To deploy everything at once run the script in the repository :
@@ -110,9 +111,8 @@ sh vulnenv.sh
 
 # Summary of used ports
 
-20/tcp   open  ftp-data  
+20/tcp   open  ssh
 21/tcp   open  ftp  
-22/tcp   open  ssh  
 23/tcp   open  telnet  
 25/tcp   open  smtp  
 80/tcp   open  mutillidae web  
@@ -125,7 +125,7 @@ sh vulnenv.sh
 139/tcp  open  netbios-ssn  
 389/tcp  open  mutillidae ldap  
 443/tcp  open  mutillidae https web page  
-445/tcp  open  microsoft-ds  
+445/tcp  open  Samba  
 512/tcp  open  exec  
 513/tcp  open  login  
 514/tcp  open  shell  
@@ -135,7 +135,7 @@ sh vulnenv.sh
 3000/tcp open  ppp  
 5432/tcp open  postgresql  
 5900/tcp open  vnc server  
-6000/tcp open  X11  
+6000/tcp open  X11 server    
 6667/tcp open  irc  
 8009/tcp open  ajp13  
 8080/tcp open  WebGoat web page   
