@@ -111,7 +111,7 @@ sh vulnenv.sh
 
 # Summary of used ports
 
-20/tcp   open  ssh
+20/tcp   open  ssh  
 21/tcp   open  ftp  
 23/tcp   open  telnet  
 25/tcp   open  smtp  
@@ -121,16 +121,16 @@ sh vulnenv.sh
 83/tcp   open  Metasploitable web page   
 84/tcp   open  DVWA  
 85/tcp   open  Bewapp  
-111/tcp  open  rpcbind  
-139/tcp  open  netbios-ssn  
+111/tcp  open  RPC #100000  
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X 
 389/tcp  open  mutillidae ldap  
 443/tcp  open  mutillidae https web page  
-445/tcp  open  Samba  
-512/tcp  open  exec  
-513/tcp  open  login  
+445/tcp  open  netbios-ssn Samba smbd 3.0.20-Debian  
+512/tcp  open  exec netkit-rsh rexecd
+513/tcp  open  login netkit-rsh rexecd
 514/tcp  open  shell  
 1099/tcp open  rmiregistry  
-1524/tcp open  ingreslock  
+1524/tcp open  telnet  
 2121/tcp open  ccproxy-ftp  
 3000/tcp open  ppp  
 5432/tcp open  postgresql  
@@ -141,7 +141,7 @@ sh vulnenv.sh
 8080/tcp open  WebGoat web page   
 8086/tcp open  d-s-n  
 8088/tcp open  radan-http  
-8180/tcp open  apache tomcat  
+8180/tcp open  Apache tomcat  
 8888/tcp open  mutillidae web page   
 9090/tcp open  WebGoat admin  
 38195/tcp open  unknown  
