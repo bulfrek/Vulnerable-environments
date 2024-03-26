@@ -122,12 +122,12 @@ sh vulnenv.sh
 84/tcp   open  DVWA  
 85/tcp   open  Bewapp  
 111/tcp  open  RPC #100000  
-139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X 
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X   
 389/tcp  open  mutillidae ldap  
 443/tcp  open  mutillidae https web page  
 445/tcp  open  netbios-ssn Samba smbd 3.0.20-Debian  
-512/tcp  open  exec netkit-rsh rexecd
-513/tcp  open  login netkit-rsh rexecd
+512/tcp  open  exec netkit-rsh rexecd   
+513/tcp  open  login netkit-rsh rexecd   
 514/tcp  open  shell  
 1099/tcp open  rmiregistry  
 1524/tcp open  telnet  
